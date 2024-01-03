@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anomia Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="starToggle" onclick="toggleStar()" style="text-align: center; margin: 2%;">
+    <img id="starImage" src="hollow-star.png" alt="Full Star">
+  </div> 
+  <div id="topSection" class="section">
+    <h2 style="transform: rotate(180deg); writing-mode: horizontal-tb;" id="top">
+      no cards</h2>
+  </div>
+  <div id="bottomSection" class="section">
+    <h2 style="writing-mode: horizontal-tb;" id="bottom">no cards</h2>
+  </div>
+
+  <div class="button-container">
+    <button style="font-size:xx-large; height:100px;" onclick="draw()">抽牌</button>
+    <div class="grid-container-vertical">
+      <div class="grid-item-vertical">
+        <button id="loadButton" style="font-size:large; height:50px;" onclick="loadStudySetFromDevice()">載入</button>
+      </div>
+      <div class="grid-item-vertical">
+        <button id="setting" style="font-size:large; height:50px;" onclick="saveStudySetToDevice()">儲存</button>
+      </div>
+
+    </div>
+    
+    <button style="font-size:xx-large; height:100px;" onclick="discard()">棄牌</button>
+  </div>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+
+</html>
